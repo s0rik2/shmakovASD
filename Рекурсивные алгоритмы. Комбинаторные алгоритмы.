@@ -1,0 +1,51 @@
+С++
+
+#include <iostream>
+
+// Рекурсивная функция вычисления факториала
+unsigned long long factorial(int n) {
+    // Базовый случай
+    if (n <= 1) {
+        return 1;
+    }
+    // Рекурсивный вызов
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int number = 5;
+    std::cout << number << "! = " << factorial(number) << std::endl;
+    return 0;
+}
+
+Python
+
+def factorial(n):
+    # Базовый случай
+    if n <= 1:
+        return 1
+    # Рекурсивный вызов
+    return n * factorial(n - 1)
+
+# Пример использования
+number = 5
+print(f"{number}! = {factorial(number)}")
+
+Java
+
+public class Factorial {
+    // Рекурсивная функция вычисления факториала
+    public static long factorial(int n) {
+        // Базовый случай
+        if (n <= 1) {
+            return 1;
+        }
+        // Рекурсивный вызов
+        return n * factorial(n - 1);
+    }
+
+    public static void main(String[] args) {
+        int number = 5;
+        System.out.println(number + "! = " + factorial(number));
+    }
+}
